@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form tasks</title>
+</head>
+
+<body>
+
+    <form action="#" method="get">
+        <h3>Employment Application</h3>
+        <table border="2px" width="70%" border="2px" bordercolor="pink" cellspacing="2px" cellpadding="2px">
+            <tr>
+                <td>First Name</td>
+                <td><input type="text" name="fname" id="fname"></td>
+            </tr>
+            <tr>
+                <td>Last Name</td>
+                <td><input type="text" name="lname" id="lname"></td>
+            </tr>
+            <tr>
+                <td>Position</td>
+                <td>
+                    <select name="position" id="position">
+                        <option value="AC">Accountant</option>
+                        <option value="RE">Receptionist</option>
+                        <option value="AD">Administrator</option>
+                        <option value="DE">Developer</option>
+                    </select>
+
+                </td>
+            </tr>
+            <tr>
+                <td>Experience Level</td>
+                <td>
+                    <select name="experience" id="experience">
+                        <option value="EL">Entry Level</option>
+                        <option value="SE">Some Experience</option>
+                        <option value="VE">Very Experience</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Job Title</td>
+                <td>
+                    <input type="checkbox" name="ft" /> Full time
+                    <input type="checkbox" name="pt" /> Part time
+                    <input type="checkbox" name="co" /> Contract
+
+                </td>
+            </tr>
+            <tr>
+                <td>Employment Status</td>
+                <td>
+                    <input type="radio" name="estatus" value="Employed" />Employed
+                    <input type="radio" name="estatus" value="Unemployed" />Unemployed
+                    <input type="radio" name="estatus" value="Student" />Student
+                </td>
+            </tr>
+            <tr>
+                <td>Additional Comments</td>
+                <td> <textarea name="Comments" id="" cols="42" rows="7"></textarea> </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <button type="submit" name="submit" value="Submit">Submit</button>
+                    <button type="reset" name="reset" value="Reset">Reset</button>
+
+                </td>
+            </tr>
+        </table>
+
+
+    </form>
+</body>
+
+</html>
