@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Manipulation</title>
+</head>
+<body>
+    <h1>Dom Manipulation</h1>
+    <div>
+        <h1 onclick="changeText(this)"> click here</h1><br>
+    </div>
+
+    <div><h3>click on add </h3>
+        <h3 onclick="count(this)" >
+        add = 0
+
+    </h3></div>
+    <script>
+        function changeText(id){
+            id.innerHTML="new Text";
+        }
+        var a=1;
+        function count(id){
+            id.innerHTML= " add = "+ a;
+            a=a+1;
+        }
+    </script>
+</body>
+</html>
