@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random numbers operations</title>
+</head>
+<body>
+    <h1>Random Numbers Operations</h1>
+
+    <div>
+        <p id="demo"></p>
+        <p id="min"></p>
+    </div>
+    <script>
+     document.getElementById("demo").innerHTML =Math.round( Math.random()*100);
+     var a =[22,34,-122, 452, 10];
+     document.getElementById("min").innerHTML= "List = "+a+"<br>"+"Minimum value = "+Math.min(...a)+
+     "<br>"+"Maximum value = "+ Math.max(...a);
+
+    </script>
+</body>
+</html>
