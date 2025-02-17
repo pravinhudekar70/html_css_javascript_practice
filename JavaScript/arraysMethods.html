@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays Methods</title>
+</head>
+
+<body>
+    <h1>Arrays methods </h1>
+    <Div>
+        <p id="fruits">
+        </p>
+        <br>
+        use of pop() method: <p id="pop"></p> <br>
+        use of shift() method: <p id="shift"></p> <br>
+        use of push() method : <p id="push"></p> <br>
+        use of unshift() method : <p id="unshift"></p> <br>
+
+    </Div>
+    <script>
+        let fruits = ["Apple", "Orange", "Pear", "Grape", "Banana", "Mango"];
+        document.getElementById("fruits").innerHTML = fruits.toString();
+
+        document.getElementById("pop").innerHTML = "poped item :" + fruits.pop()
+            + " <br> remain array : " + fruits.toString()
+            + "<br>........................";
+
+        document.getElementById("shift").innerHTML = "shifted item :" + fruits.shift()
+            + " <br> remain array : " + fruits.toString()
+            + "<br>........................";
+
+        fruits.push("cherry");
+        document.getElementById("push").innerHTML = "pushed item :" + fruits[fruits.length - 1]
+            + " <br> remain array : " + fruits.toString()
+            + "<br>........................";
+
+        fruits.unshift("Apple");
+        document.getElementById("unshift").innerHTML = "unshifted item :" + fruits[0]
+            + " <br> remain array : " + fruits.toString()
+            + "<br>........................";
+
+
+    </script>
+</body>
+
+</html>

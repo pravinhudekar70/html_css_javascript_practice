@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Changing and Deleting Item in Array </title>
+</head>
+<body>
+    <h1>Changing and Deleting Elements in arrays</h1>
+    <div>
+        <p id="fruit"></p><br>
+        <p id="change"></p><br>
+        <p id="delete"></p><br>
+    </div>
+    <script>
+        let fruits = ["Apple", "Orange", "Pear", "Grape", "Banana", "Mango"];
+        document.getElementById("fruit").innerHTML=fruits.toString()+
+        "<br> ................................";
+
+       var a= fruits[0];
+       fruits[0]=fruits[3];
+       fruits[3] =a;
+        document.getElementById("change").innerHTML="inter change items = "
+        +fruits[0]+" <=> "+fruits[3]
+        + "<br> fruits = "+ fruits.toString()
+        + "<br>.................................."
+
+         a =fruits[1];
+         delete(fruits[1]);
+         document.getElementById("delete").innerHTML="Deleted items = "+a
+         +"<br> fruits = "+fruits.toString()
+         +"<br> ................................."
+
+    </script>
+</body>
+</html>

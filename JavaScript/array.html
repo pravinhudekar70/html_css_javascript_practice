@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Array</title>
+</head>
+<body>
+    <h1>JavaScript Array Examples</h1>
+    <div>
+        <p id="arr" ></p>
+        <br>
+        using join method to separate with & = <p id="arr2"></p>
+    </div>
+    <script>
+      var fruits =["Apple","Orange","Pear","Graps","Mango","Banana"];
+      document.getElementById("arr").innerHTML=
+      fruits.toString();
+      document.getElementById("arr2").innerHTML=
+      fruits.join(" & ");
+    </script>
+</body>
+</html>

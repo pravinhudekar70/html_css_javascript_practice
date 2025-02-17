@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Splice </title>
+</head>
+
+<body>
+    <h1> Use of Array Splice method</h1>
+    <div>
+        <p id="fruits"></p><br>
+        <p id="Splice"></p><br>
+    </div>
+    <script>
+        let fruits = ["Apple", "Orange", "Pear", "Grape", "Banana", "Mango"];
+            document.getElementById("fruits").innerHTML = "fruits = " +fruits.toString()
+            +"<br> ..........................";
+
+            fruits.splice(2,0,"lemon","kivi");
+            document.getElementById("Splice").innerHTML= "Adding itemd in fruits using splice <br> "
+            +fruits.toString();
+
+    </script>
+</body>
+
+</html>
