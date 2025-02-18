@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Events Example</title>
+    <style>
+        button {
+            padding: 10px 20px;
+            margin: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            background-color: lightgray;
+            transition: 0.3s;
+        }
+    </style>
+</head>
+<body>
+    <h1>JavaScript Events Example</h1>
+    <div>
+        <button id="btn1">Click Me</button>
+        <button id="btn2">Hover Over Me</button>
+        <button id="btn3">Double Click Me</button>
+        <button id="btn4">Right Click Me</button>
+        <button id="btn5">Press Any Key</button>
+    </div>
+
+    <script>
+        // Click Event
+        document.getElementById("btn1").addEventListener("click", function () {
+            this.innerHTML = "Clicked!";
+            this.style.backgroundColor = "green";
+            this.style.color = "white";
+        });
+
+        // Mouseover Event (Highlight button)
+        document.getElementById("btn2").addEventListener("mouseover", function () {
+            this.style.backgroundColor = "blue";
+            this.style.color = "white";
+        });
+
+        // Mouseout Event (Reset button)
+        document.getElementById("btn2").addEventListener("mouseout", function () {
+            this.style.backgroundColor = "lightgray";
+            this.style.color = "black";
+        });
+
+        // Double Click Event
+        document.getElementById("btn3").addEventListener("dblclick", function () {
+            alert("Button Double Clicked!");
+        });
+
+        // Context Menu Event (Right Click)
+        document.getElementById("btn4").addEventListener("contextmenu", function (event) {
+            event.preventDefault(); // Prevents default right-click menu
+            alert("Right Clicked on Button!");
+        });
+
+        // Keydown Event (Detect Key Press)
+        document.addEventListener("keydown", function (event) {
+            document.getElementById("btn5").innerHTML = "Key Pressed: " + event.key;
+        });
+    </script>
+
+</body>
+</html>
