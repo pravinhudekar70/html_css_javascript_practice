@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Call Back function</title>
+</head>
+<body>
+    <p id="demo">
+
+    </p>
+    <p id="demo1"></p>
+    <script>
+        function greet(name, callback) {
+    document.getElementById("demo").innerHTML="Hello, " + name;
+    callback();
+}
+
+function sayGoodbye() {
+    document.getElementById("demo1").innerHTML="Goodbye!";
+}
+
+greet("Pravin", sayGoodbye);
+
+    </script>
+</body>
+</html>
